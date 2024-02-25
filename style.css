@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Solomon-Sans-Normal'; /* Имя вашего шрифта */
+    src: url('/fonts/ofont.ru_Solomon\ Sans.ttf') format('truetype'); /* Путь к файлу шрифта */
+}
+@font-face {
+    font-family: 'Solomon-Sans-black'; /* Имя вашего шрифта */
+    src: url('/fonts/ofont.ru_Solomon\ Sans_black.ttf') format('truetype'); /* Путь к файлу шрифта */
+}
+
+
+/* General Styles */
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Solomon-Sans-Normal", sans-serif; /* Шрифт Solomon-Sans-Normal с заглушкой sans-serif */
+    /* Установка изображения в качестве фона */
+    background-image: url('/img/img_backout_1-1.png');
+    /* Растягивание изображения на всю ширину и высоту */
+    background-size: contain;
+    /* Повторение изображения отключено */
+    background-repeat: no-repeat;
+    /* Фиксация изображения на верхнем левом углу */
+    /* Фиксация изображения при прокрутке */
+    background-attachment: local;
+    background-color: rgb(0, 73, 144);
+}
+
+/*.back .imgs_back .img_back_1{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}*/
+
+header {
+    background-color: #ffffff;
+    padding: 0px 18px 0px 18px;
+    margin: 73px 132px 100px 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_main img {
+    margin: 0px 130px 0px 18px;
+}
+
+.nav {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 35px 5px;
+    margin: 0px 30px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* скрытие части псевдоэлемента, выходящей за пределы .nav-link */
+    color: rgb(0, 73, 144);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Ширина палочки */
+    height: 8px; /* Высота палочки */
+    background-color: rgba(0, 73, 144, 0.5);
+    transition: height 0.3s, opacity 0.3s; /* плавное изменение высоты и прозрачности */
+    opacity: 0;
+}
+
+.nav-link:hover::after {
+    height: 5%; /* Растягиваем палочку на всю высоту элемента .nav-link */
+    opacity: 1;
+}
+
+.search {
+    margin: 0px 41px 0px 131px;
+}
+
+.separator {
+    padding: 0px 20px 0px 20px;
+}
+
+.profile {
+    margin: 0px 19px 0px 40px;
+}
+
+
+
+.left_button {
+    display: inline-block; /* Чтобы применить transform */
+}
+
+.left_button p {
+    transform: rotate(180deg); /* Поворот текста на 90 градусов */
+    transform-origin: left top; /* Определение точки вращения */
+    white-space: nowrap; /* Предотвращение переноса текста */
+    writing-mode: vertical-lr; /* Альтернативный способ вертикального написания */
+    position: fixed; /* Размещение абсолютно */
+    top: 50%;
+    left: 2%;
+    background-color: rgb(0, 73, 144);
+    color: white;
+    font-size: 14px;
+
+    padding: 25px 15px 25px 20px;
+}
+
+
+
+.main {
+    margin: 0px 132px 100px 145px;
+}
+
+
+
+.D1-11 {
+    display: flex;
+    align-items: center;
+}
+
+.D1-11 img {
+    margin: 0px 28px 0px 0px;
+}
+
+.D1-11 h1 {
+    font-family: 'Solomon-Sans-black';
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.D1-12_text {
+    color: #ffffff;
+    max-width: 21%;
+    font-family: "Solomon-Sans-Normal", sans-serif; /* Указываем шрифт Solomon-Sans-Normal с заглушкой sans-serif */
+    font-weight: 400; /* Устанавливаем нормальный вес шрифта */
+    font-size: 14px; /* Устанавливаем размер шрифта 14 пикселей */
+    line-height: 26px; /* Устанавливаем высоту строки 26 пикселей */
+    letter-spacing: 0px; /* Устанавливаем межбуквенное расстояние 0 пикселей */
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.D1-21_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0px 0px 0px;
+}
+
+.D1-21_buttons button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.D1-211 {
+    border: 4px solid white;
+    padding: 6px 20px; /* Увеличиваем отступы, чтобы компенсировать рамку */
+    margin-top: 5px;
+}
+
+.D1-212 button {
+    background-color: rgb(72, 167, 200);
+    padding: 30px 35px 20px 35px;
+
+}
+
+.D1-212 button:hover {
+    background-color: rgb(0, 73, 144);
+}
+
+
+
+
+/* Main Content Styles */
+.D1-30, .D2-40, .D3-50 {
+    display: flex;
+    margin-top: 84px;
+}
+
+
+.D1-30 {
+    background-color: rgba(72, 167, 200, 0.7);
+}
+
+.D1-31_doctor img:first-child {
+    position: absolute;
+    z-index: -1;
+}
+
+.D1-31_doctor img:last-child {
+    padding: 58px 58px 71px 58px;
+}
+
+.D1-32_text_block {
+    position: relative;
+}
+
+.D1-32_text_block h2 {
+    color: #ffffff;
+    font-family: 'Solomon-Sans-Bold', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+
+    text-align: left;
+    margin-right: 70px;
+}
+
+.D1-32_text_block h3 {
+    color: #ffffff;
+    font-family: 'Solomon-Sans-SemiBold', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.D1-32_text_block p {
+    color: #ffffff;
+    font-family: 'Solomon-Sans-Normal', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.D1-32_text_block {
+    
+}
+
+.D1-33-1_text_block {
+    background-color: rgba(0, 73, 144, 0.7);
+    width: 340px;
+    height: 348px;
+}
+
+
+
+/* Additional Styles based on your HTML structure */
+/* Add your styles for various sections, buttons, images, etc. */
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    margin-right: 135px;
+}
+
+.D4-61, .D4-62 {
+    margin-bottom: 20px;
+}
+
+.D4-611_links a {
+    color: #ffd0d0;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.D4-611_links a:hover {
+    text-decoration: underline;
+}
+
