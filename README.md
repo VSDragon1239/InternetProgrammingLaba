@@ -1,4 +1,4 @@
-# Internet Programming v0.0.1 (not_worked)
+# Internet Programming v0.0.2 (not_worked)
 
 Практическая работа по дисциплине "ИНТЕРНЕТ ПРОГРАММИРОВАНИЕ" в рамках второго курса 4 семестра "Прикладная Информатика" - ПИ-22
 
@@ -6,7 +6,8 @@
 
 ## Установка
 
-1. Ничего, кроме самого репозитория - `git clone https://github.com/VSDragon1239/InternetProgrammingLaba.git`
+1. Клонировать репозитория - `git clone https://github.com/VSDragon1239/InternetProgrammingLaba.git`
+2. Дублировать изменения которых у вас нет, а в хабе есть - `git fetch https://github.com/VSDragon1239/InternetProgrammingLaba.git`
 
 
 ## Использование
@@ -14,6 +15,8 @@
 1. Откройте папку как проект в редакторе кода - Visual Studio Code
 2. Запустите сайт нажав ПКМ по файлу `index.html` с помощью Server Live
 3. Наслаждайтесь разработкой вместе со мной
+4. Измени имя  и почту - `` - ``
+5. `git commit -m "New_ZabGU_0.0.2"`
 
 ## Структура проекта
 
@@ -24,7 +27,7 @@
 
 ## Лицензия
 
-Этот проект не лицензирован.
+Этот проект не лицензирован, т.к был сделан в рамках дисциплины университета ЗабГУ
 
 ## Авторы
 
