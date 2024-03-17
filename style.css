@@ -37,31 +37,30 @@ body {
 }*/
 
 header {
+    font-size: 12px;
     background-color: #ffffff;
-    padding: 16px 19px 16px 17px;
+    padding: 11px 19px 12px 17px;
     margin: 36px 132px 0px 145px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .img_main img {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 1.5vw 0px 0px;
     width: 123px;
     height: 17px;
 }
 
 .nav {
-    margin: 0px 131px 0px 129px;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    justify-content: space-between;
 }
 
 .nav-link {
     text-decoration: none;
     padding: 0px 0px;
-    margin: 0px 6px;
+    margin: 0px 25px;
     position: relative;
     display: inline-block;
     overflow: hidden; /* скрытие части псевдоэлемента, выходящей за пределы .nav-link */
@@ -85,8 +84,15 @@ header {
     opacity: 1;
 }
 
+.headblock3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .search {
-    margin: 0px 41px 0px 0px;
+    margin: 0px 41px 0px 1.5vw;
+    margin-left: auto;
 }
 
 .separator {
@@ -121,7 +127,7 @@ header {
 
 
 .main {
-    margin: 99px 132px 100px 145px;
+    margin: 20vh 132px 20vh 145px;
 }
 
 
@@ -129,16 +135,17 @@ header {
 .D1-11 {
     display: flex;
     align-items: center;
-    margin: 0px 0px 21px 0px;
+    margin: 0px 0px 1vh 0px;
 }
 
 .D1-11 img {
+    vertical-align: middle; /* Выравнивание изображения по центру относительно базовой линии */
     margin: 0px 28px 18px 0px;
-    align-items: center;
     padding: 1px 0px 15px 0px;
 }
 
 .D1-11 h1 {
+    vertical-align: middle; /* Выравнивание заголовка по центру относительно базовой линии */
     color: rgb(255, 255, 255);
     font-family: 'Solomon-Sans-Black';
     font-size: 30px;
@@ -149,9 +156,10 @@ header {
     text-transform: uppercase;
 }
 
+
 .D1-12_text {
     color: #ffffff;
-    max-width: 21%;
+    max-width: 26vw;
     font-family: "Solomon-Sans-Normal", sans-serif; /* Указываем шрифт Solomon-Sans-Normal с заглушкой sans-serif */
     font-weight: 400; /* Устанавливаем нормальный вес шрифта */
     font-size: 14px; /* Устанавливаем размер шрифта 14 пикселей */
@@ -164,10 +172,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 0px 0px 0px;
+    margin: 10vh 0px 0px 0px;
 }
 
 .D1-21_buttons button {
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     line-height: 27px;
@@ -182,14 +191,25 @@ header {
 }
 
 .D1-211 {
+    vertical-align: middle;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 16vw;
+    height: 8vh;
     border: 4px solid white;
-    padding: 6px 20px; /* Увеличиваем отступы, чтобы компенсировать рамку */
-    margin-top: 5px;
+    padding: 0.1vw 3vh; /* Увеличиваем отступы, чтобы компенсировать рамку */
 }
 
 .D1-212 button {
+    vertical-align: middle;
+    width: 5vw;
+    height: 5vw;
     background-color: rgb(72, 167, 200);
-    padding: 30px 35px 20px 35px;
+    padding: 1vw;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin: -0.15vw;
 
 }
 
